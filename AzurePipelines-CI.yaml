@@ -1,5 +1,6 @@
 pool:
-  vmImage: ubuntu-latest
+  name: Azure Pipelines
+  demands: maven
 
 steps:
 - task: Maven@3
