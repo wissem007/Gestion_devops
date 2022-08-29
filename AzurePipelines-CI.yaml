@@ -6,7 +6,7 @@ steps:
 - task: Maven@3
   displayName: 'Maven pom.xml'
   inputs:
-    mavenPomFile: '$(Parameters.mavenPOMFile)'
+    options: '-DskipITs --settings ./maven/settings.xml'
 
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
